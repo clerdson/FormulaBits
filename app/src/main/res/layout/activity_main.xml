@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    android:backgroundTint="#00070707"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/baner"
+        android:layout_width="395dp"
+        android:layout_height="220dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        tools:layout_editor_absoluteX="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="206dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="342dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="32dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></ImageView>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="8dp"
+                android:text="12 agost"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.157"></TextView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="257dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="148dp"
+                android:layout_marginEnd="52dp"
+                android:text="Exemplo de Comunicado"
+                android:textAlignment="center"
+                android:textColor="@color/blue2"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="397dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/textButton"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="206dp"
+                    android:layout_height="37dp"
+                    android:backgroundTint="@color/green"
+                    android:text="Camera Captura"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/ic_add_24" />
+
+                <Button
+                    android:id="@+id/textButton1"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="185dp"
+                    android:layout_height="36dp"
+                    android:text="Lista de Indicação"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/share" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/textButton2"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="196dp"
+                    android:layout_height="37dp"
+                    android:text="Minha Loja Virtual"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_add_24" />
+
+                <Button
+                    android:id="@+id/textButton3"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="185dp"
+                    android:layout_height="36dp"
+                    android:text="Catalogo de Produtos"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/menu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/textButton4"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="196dp"
+                    android:layout_height="37dp"
+                    android:text="Habilitar Localização"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/home" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/green"
+        android:paddingTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RS 5000,01"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saldo Disponivel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/orange"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RS 5000,01"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ganhos ate Hoje"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/blue"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RS 00,0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Previsão de Ganhos"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/grey"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:layout_editor_absoluteX="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7254/7"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ganhos ate Hoje"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/orange"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_24" />
+
+    <Button
+        android:id="@+id/button9"
+
+        style="@style/ButtonWithBorder"
+        android:layout_width="155dp"
+        android:layout_height="69dp"
+        android:background="@drawable/button_border"
+        android:elevation="8dp"
+        android:text="Menu"
+        android:textColor="@color/white"
+        app:icon="@android:drawable/ic_menu_share"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonwhat"
+        style="@style/ButtonWithBorder2"
+        android:layout_width="215dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/green"
+        android:elevation="8dp"
+
+        android:text="Menu"
+        android:textColor="@color/white"
+        app:icon="@drawable/idea"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton7"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
