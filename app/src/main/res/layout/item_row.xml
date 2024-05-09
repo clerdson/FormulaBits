@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="499dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="188dp"
+                app:srcCompat="@drawable/iluminador" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iluminador"
+                android:layout_marginRight="100dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="161dp" />
+
+            <Button
+                android:id="@+id/textButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:backgroundTint="#B2B3AC"
+                android:text="R$ 100"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                tools:layout_editor_absoluteY="201dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="192dp"
+                    android:layout_height="53dp"
+                    android:ems="10"
+                    android:background="@drawable/edittext_background"
+                    android:inputType="text"
+                    android:text="1"
+                    app:layout_constraintStart_toStartOf="@+id/textButton"
+                    tools:layout_editor_absoluteY="254dp" />
+
+                <Button
+                    android:id="@+id/textButton20"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="160dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/green"
+                    android:text="Adicionar"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_add_24"
+                    tools:layout_editor_absoluteX="212dp"
+                    tools:layout_editor_absoluteY="257dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/textButton4"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="188dp"
+                    android:layout_height="46dp"
+                    android:backgroundTint="#FDFDFC"
+                    android:text="Compartilha"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+
+                    android:textStyle="bold"
+                    app:icon="@drawable/share"
+                    app:layout_constraintStart_toStartOf="@+id/editTextText"
+                    tools:layout_editor_absoluteY="309dp" />
+
+                <Button
+                    android:id="@+id/textButton2"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#EDEDE8"
+                    android:text="Adicionar"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+
+                    android:textStyle="bold"
+                    app:icon="@drawable/share"
+                    tools:layout_editor_absoluteX="214dp"
+                    tools:layout_editor_absoluteY="307dp" />
+            </LinearLayout>
+
+
+            <TextView
+
+                android:id="@+id/textButton3"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="239dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:backgroundTint="#FDFDFC"
+                android:text="Compartilhe este produto"
+                android:textColor="@color/grey"
+
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:icon="@drawable/share"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textButton4" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
